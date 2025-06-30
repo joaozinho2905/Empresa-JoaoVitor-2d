@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+/*formulário*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.forms{
+    width: 200px;
+    height: 350px;
+    font-family: 'Segoe Ui', sans-serif;
+    color: white;
+    width: 400px;
+    background-color: black;
+    border-radius: 30px;
+    padding: 10px;
+
+}
+.login-button{
+    border-radius: 5px;
+    width: 370px;
+    height: 30px;
+}
+.botaoentrar{
+    justify-items: center;
+}
+.submit1{
+    display: flex;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(98, 0, 120);
+    width: 370px;
+    height: 50px;
+}
