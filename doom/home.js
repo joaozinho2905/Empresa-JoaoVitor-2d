@@ -1,16 +1,19 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const carousels = document.querySelectorAll('.carousel-container');
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const carousel = document.getElementById("carousel");
-        const prev = document.querySelector(".prev");
-        const next = document.querySelector(".next");
+    carousels.forEach(container => {
+        const carousel = container.querySelector('.carousel');
+        const prev = container.querySelector('.prev');
+        const next = container.querySelector('.next');
 
-        const scrollAmount = 300; // Quantidade de rolagem em pixels
+        const scrollAmount = 300;
 
-        prev.addEventListener("click", function () {
-            carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        prev.addEventListener('click', () => {
+            carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
         });
 
-        next.addEventListener("click", function () {
-            carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        next.addEventListener('click', () => {
+            carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         });
     });
+});
